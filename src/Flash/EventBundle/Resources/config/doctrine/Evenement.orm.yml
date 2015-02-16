@@ -1,0 +1,29 @@
+Flash\EventBundle\Entity\Evenement:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            column: Nom
+        lieu:
+            type: string
+            length: 255
+            column: Lieu
+        date:
+            type: datetime
+            column: Date
+        type:
+            type: string
+            length: 255
+            column: Type
+        description:
+            type: text
+            column: Description
+    lifecycleCallbacks: {  }

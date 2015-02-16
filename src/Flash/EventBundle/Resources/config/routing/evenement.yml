@@ -1,0 +1,30 @@
+evenement:
+    path:     /
+    defaults: { _controller: "FlashEventBundle:Evenement:index" }
+
+evenement_show:
+    path:     /{id}/show
+    defaults: { _controller: "FlashEventBundle:Evenement:show" }
+
+evenement_new:
+    path:     /new
+    defaults: { _controller: "FlashEventBundle:Evenement:new" }
+
+evenement_create:
+    path:     /create
+    defaults: { _controller: "FlashEventBundle:Evenement:create" }
+    requirements: { _method: post }
+
+evenement_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FlashEventBundle:Evenement:edit" }
+
+evenement_update:
+    path:     /{id}/update
+    defaults: { _controller: "FlashEventBundle:Evenement:update" }
+    requirements: { _method: post|put }
+
+evenement_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FlashEventBundle:Evenement:delete" }
+    requirements: { _method: post|delete }
