@@ -5,3 +5,7 @@ flash_event_evenement:
 flash_event_homepage:
     path:     /hello/{name}
     defaults: { _controller: FlashEventBundle:Default:index }
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix: /

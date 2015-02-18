@@ -3,11 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/style.css') }}"/>
+            <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        {% block navbar %}
+            {{  include("::navbar.html.twig") }}
+        {% endblock %}
+        {% block body %}{%  endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('bundles/flashevent/js/jquery-1.11.2.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/flashevent/js/bootstrap.min.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
