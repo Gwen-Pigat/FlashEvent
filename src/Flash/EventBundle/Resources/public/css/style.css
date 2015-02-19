@@ -2,3 +2,12 @@ html{
     background-color: #EFEFCE;
     color: #24334C
 }
+
+td{
+    border: 3px #24334C solid;
+    padding-left: 30%;
+}
+
+tr{
+    padding: 30%
+}
