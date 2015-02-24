@@ -11,3 +11,17 @@ td{
 tr{
     padding: 30%
 }
+
+.navbar-blue{
+    background-color: #24334C;
+    color: #EFEFCE
+}
+
+.navbar-blue a{
+    color: #EFEFCE
+}
+
+.active{
+    background-color: #EFEFCEC;
+    color: #24334C
+}
