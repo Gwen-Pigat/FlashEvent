@@ -1,23 +1,30 @@
 html{
     background-color: #EFEFCE;
-    color: #24334C
+    color: #24334C;
+    word-break: break-all;
 }
 
 td{
     border: 3px #24334C solid;
-    padding-left: 30%;
+    padding-left: 30px;
 }
 
-tr{
-    padding: 30%
+.records_list thead tr{
+    padding: 25%;
+    margin: 25%;
 }
 
-.navbar-blue{
+th{
+    background-color: red;
+    word-spacing: 15px;
+}
+
+.navbar-inverse{
     background-color: #24334C;
     color: #EFEFCE
 }
 
-.navbar-blue a{
+.navbar-inverse a{
     color: #EFEFCE
 }
 
