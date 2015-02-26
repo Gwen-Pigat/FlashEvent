@@ -14,13 +14,17 @@ td{
     margin: 25%;
 }
 
+.active, .sr-only{
+    color: red
+}
+
 th{
     background-color: red;
     word-spacing: 15px;
 }
 
 .navbar-inverse{
-    background-color: #24334C;
+    background-color: #b84f0a;
     color: #EFEFCE
 }
 
@@ -32,3 +36,4 @@ th{
     background-color: #EFEFCEC;
     color: #24334C
 }
+
