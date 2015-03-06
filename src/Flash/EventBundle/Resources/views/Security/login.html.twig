@@ -2,6 +2,7 @@
 
 {% trans_default_domain 'FOSUserBundle' %}
 
+
 {% block fos_user_content %}
 
     {% block stylesheets %}
@@ -28,8 +29,9 @@
 
     <input type="submit" class="btn btn-success" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
     <br/><br/><br/>
-    <a href="{{ path('fos_user_registration_register') }}">Vous n'avez pas de compte ??</a>
+
 </form>
+    <a class="compte" href="{{ path('fos_user_registration_register') }}">Pas de compte ??</a>
 
 </center>
 

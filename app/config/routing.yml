@@ -1,10 +1,6 @@
 flash_event:
     resource: "@FlashEventBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /evenement
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
-
-homepage:
-     path:     /
-     defaults: { _controller: "FlashEventBundle:default:index" }

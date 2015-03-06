@@ -1,10 +1,19 @@
 {% extends "FOSUserBundle::layout.html.twig" %}
 
+
+
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
-    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p><br/>
-    <a href="{{ path('fos_user_security_login') }}">Retournez à la page d'accueil ;)</a>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/login.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
+    {% endblock %}
+    <center>
+    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+    <p>
+    <a href="{{ path('fos_user_security_logout') }}">Retournez à la page d'accueil ;)</a></p>
+    </center>
     {% if app.session is not empty %}
         {% set targetUrl = app.session.get('_security.' ~ app.security.token.providerKey ~ '.target_path') %}
         {% if targetUrl is not empty %}<p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>

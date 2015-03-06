@@ -3,5 +3,9 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/login.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
+    {% endblock %}
     <p>{{ 'registration.check_email'|trans({'%email%': user.email}) }}</p>
 {% endblock fos_user_content %}

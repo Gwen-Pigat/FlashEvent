@@ -1,11 +1,17 @@
 {% extends "FOSUserBundle::layout.html.twig" %}
 
-{% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/login.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
-{% endblock %}
-
-
 {% block fos_user_content %}
-{% include "FOSUserBundle:Registration:register_content.html.twig" %}
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/login.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
+    {% endblock %}
+
+    <center>
+    <h1>MassEvent</h1>
+        <h2>Création de votre compte ;)</h2>
+
+        {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+
+    </center>
 {% endblock fos_user_content %}

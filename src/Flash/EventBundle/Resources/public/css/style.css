@@ -4,9 +4,15 @@ html{
     word-break: break-all;
 }
 
-td{
+tr td{
     border: 3px #24334C solid;
-    padding-left: 30px;
+    padding: 10px;
+    margin-left: 10px
+}
+
+th{
+    width: 10%;
+    padding: 10px
 }
 
 .records_list thead tr{
@@ -14,12 +20,8 @@ td{
     margin: 25%;
 }
 
-.active, .sr-only{
-    color: red
-}
-
 th{
-    background-color: red;
+    background-color: #b6bcff;
     word-spacing: 15px;
 }
 

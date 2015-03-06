@@ -1,38 +1,37 @@
 body{
-    background-image: url("../images/background_images_84.jpg");;
-    text-shadow: 0 0 15px #0dcd4c
+    background-image: url("../images/background.jpg");
 }
 
 @font-face{
-    font-family: "stink";
+    font-family: "headerfont";
     src: url("../fonts/Stink.ttf");
 }
 
 @font-face{
-    font-family : "London";
-    src : url('../fonts/OldLondon.ttf');
+    font-family: "groove";
+    src: url("../fonts/GrooveNext-.ttf");
 }
 
 center h1{
-    text-shadow: 0 0 15px #0dcd4c;
-    color: #0dcd4c;
+    text-shadow: 0 0 15px black;
+    color: black;
     font-size: 180px;
-    font-family: "stink";
+    font-family: "headerfont";
     margin-bottom: -4%;
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
 center h2{
-    text-shadow: 0 0 15px #0dcd4c;
-    color: #0dcd4c;
-    font-size: 20px;
+    font-family: "groove";
+    text-shadow: 0 0 15px black;
+    color: black;
     margin-bottom: 8%;
     font-size: 25px;
 }
 
 label{
     color: black;
-    text-shadow: 0 0 15px #0dcd4c;
+    text-shadow: 0 0 15px black;
 }
 
 #username, #password{
@@ -42,7 +41,39 @@ label{
     text-shadow: 0 0 15px #0dcd4c;
 }
 
-div{
-    color: #EFEFCE;
-    text-shadow: 0 0 10px black;
+
+.compte{
+    margin-top: 30%;
+    padding: 1%;
+    text-decoration: none;
+    color: red;
+    text-shadow: 0 0 0 black
+}
+
+.compte:hover{
+    padding: 1%;
+    border: 3px #28C223 solid;
+    transition: 0.4s;
+    color: #28C223;
+    font-size: 15px;
+    text-shadow: 0 0 15px #28C223;
+}
+
+center p{
+    font-size: 25px;
+    text-shadow: 0 0 15px black;
+    margin-top: 10%
+}
+
+center a{
+    text-decoration: none;
+    color: red;
+    padding: 1%
+}
+
+center a:hover{
+    transition: 0.4s;
+    border: 3px #28C223 solid;
+    color: #28C223;
+    text-shadow: 0 0 15px #28C223;
 }
