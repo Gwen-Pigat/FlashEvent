@@ -1,38 +1,38 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-    <div class="alert alert-success alert-dismissible" role="alert">
-        <button type="button" class="dismiss" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-        Salut et bienvenue sur MassEvent !! ;)
-    </div>
+    <br/><br/>
+
     <h1>Liste des événements</h1>
 
 <div class="container">
 
+
+
     <table class="table">
         <thead>
+        <center>
             <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Lieu</th>
-                <th>Date</th>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Actions</th>
+                <td class="active">Id</td>
+                <td class="success">Nom</td>
+                <td class="warning">Lieu</td>
+                <td class="danger">Date</td>
+                <td class="info">Type</td>
+                <td class="info">Description</td>
             </tr>
+        </center>
         </thead>
 </div>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('evenement_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.nom }}</td>
-                <td>{{ entity.lieu }}</td>
-                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.type }}</td>
-                <td>{{ entity.description }}</td>
-                <td>
+                <td class="active"><a href="{{ path('evenement_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td class="active">{{ entity.nom }}</td>
+                <td class="active">{{ entity.lieu }}</td>
+                <td class="active">{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td class="active">{{ entity.type }}</td>
+                <td class="active">{{ entity.description }}</td>
                 <ul>
                     <li>
                         <a href="{{ path('evenement_show', { 'id': entity.id }) }}">Montrer</a>

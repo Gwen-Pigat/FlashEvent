@@ -4,3 +4,7 @@ flash_event:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+password_send:
+    resource: "@FlashEventBundle/Resources/config/routing/password.yml"
+    prefix: /password

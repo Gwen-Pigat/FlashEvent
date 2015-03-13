@@ -1,5 +1,8 @@
 body{
     background-image: url("../images/background.jpg");
+    height: auto;
+    max-width: 100%;
+    max-height: 100%
 }
 
 @font-face{
@@ -13,9 +16,9 @@ body{
 }
 
 center h1{
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 1px black;
     color: black;
-    font-size: 180px;
+    font-size: 200px;
     font-family: "headerfont";
     margin-bottom: -4%;
     margin-top: -3%;
@@ -23,27 +26,26 @@ center h1{
 
 center h2{
     font-family: "groove";
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 1px black;
     color: black;
-    margin-bottom: 8%;
+    margin-bottom: 2.5%;
     font-size: 25px;
 }
 
 label{
     color: black;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 1px black;
 }
 
 #username, #password{
     padding: 0.3%;
     color: black;
     border-radius: 5px;
-    text-shadow: 0 0 15px #0dcd4c;
+    text-shadow: 0 0 1px #0dcd4c;
 }
 
 
 .compte{
-    margin-top: 30%;
     padding: 1%;
     text-decoration: none;
     color: red;
@@ -55,13 +57,27 @@ label{
     border: 3px #28C223 solid;
     transition: 0.4s;
     color: #28C223;
-    font-size: 15px;
-    text-shadow: 0 0 15px #28C223;
+    text-shadow: 0 0 1px #28C223;
+}
+
+.accueil{
+    padding: 1%;
+    text-decoration: none;
+    color: red;
+    text-shadow: 0 0 0 black
+}
+
+.accueil:hover{
+    padding: 1%;
+    border: 3px #28C223 solid;
+    transition: 0.4s;
+    color: #28C223;
+    text-shadow: 0 0 1px #28C223;
 }
 
 center p{
     font-size: 25px;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 1px black;
     margin-top: 10%
 }
 
@@ -75,5 +91,5 @@ center a:hover{
     transition: 0.4s;
     border: 3px #28C223 solid;
     color: #28C223;
-    text-shadow: 0 0 15px #28C223;
+    text-shadow: 0 0 1px #28C223;
 }

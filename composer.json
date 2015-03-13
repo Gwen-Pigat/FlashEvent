@@ -22,10 +22,13 @@
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "hautelook/alice-bundle": "0.2.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
-        "doctrine/data-fixtures": "dev-master"
+        "doctrine/data-fixtures": "dev-master",
+        "silex/silex": "~1.1",
+        "monolog/monolog": "~1.7"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "heroku/heroku-buildpack-php": "*"
     },
     "scripts": {
         "post-root-package-install": [

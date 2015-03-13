@@ -10,8 +10,10 @@
     <center>
     <h1>MassEvent</h1>
         <h2>Création de votre compte ;)</h2>
-
+        <br/><br/><br/>
         {% include "FOSUserBundle:Registration:register_content.html.twig" %}
 
+        <br/><br/><br/>
+        <a class="accueil" href="{{ path('fos_user_security_login') }}">Retour à l'accueil</a>
     </center>
 {% endblock fos_user_content %}
