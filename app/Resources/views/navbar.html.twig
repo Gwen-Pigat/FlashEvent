@@ -4,7 +4,7 @@
     <h2>PixOFHeaven is at the gates.....</h2>
 
 <div class="nav-bar">
-    <a href="{{ path('fos_user_security_logout') }}">
+    <a href="{{ path('evenement') }}">
 <button><img src="{{ asset('1.png') }}" alt="Smoking"/>Accueil</button>
     </a>
     <a href="{{ path('fos_user_security_logout') }}">
@@ -13,8 +13,8 @@
     <a href="{{ path('evenement_new') }}">
         <button><img src="{{ asset('3.png') }}" alt="Agenda"/>Créer un événement</button>
     </a>
-    <a href="{{ path('evenement_new') }}">
-        <button><img src="{{ asset('4.png') }}" alt="Agenda"/>Mon profil</button>
+    <a href="{{ path('fos_user_profile_show') }}">
+        <button><img src="{{ asset('4.png') }}" alt="Profil"/>Mon profil</button>
     </a>
 </div>
 

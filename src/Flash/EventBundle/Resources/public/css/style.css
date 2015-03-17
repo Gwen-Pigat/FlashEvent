@@ -16,27 +16,34 @@ tr{
 .nav-bar{
     height: auto;
     padding: 1%;
-    background: url('../images/2.jpg') center;
-    background-size: 100% 200%;
+    background: url('../images/background.jpg') center;
     border: 1px black solid;
-    font-size: 25px
+    font-size: 25px;
+}
+
+.nav-bar:hover{
+    opacity: 1
 }
 
 .nav-bar button{
     padding: 1%;
     border-radius: 15px;
-    background: url('../images/background.jpg') center;
+    background: url('../images/background1.jpg') center;
     color: #28C223;
     border: 1px black solid;
     text-shadow: 0 0 1px #28C223;
+    font-size: 20px
 
 }
 
 .nav-bar button:hover{
     -webkit-box-shadow: 5px 5px 10px 10px #000000;
+    background: url('../images/background.jpg') center;
     box-shadow: 1px 1px 5px 3px #000000;
     transition: 0.4s;
     opacity: 0.7;
+    color: black;
+    text-shadow: 0 0 1px black;
     border: 1px black solid;
     list-style-type: none;
 }
@@ -52,5 +59,35 @@ tr{
 }
 
 center img{
-    height: auto;
+    height: auto
+}
+
+span h3{
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    text-decoration: underline;
+    font-family: "headerfont";
+    color: white;
+    text-shadow: 0 0 1px white;
+}
+
+.fadeOut{
+    opacity: 0.5;
+    transition: 1.0s
+}
+
+.donnees{
+    background-color: #54b27a;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 10px black;
+    margin: auto;
+    padding: 1%
+}
+
+.donnees p{
+    text-align: left;
+    margin-left: 1%;
+    margin-top: 0%
 }

@@ -1,6 +1,33 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/login.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/flashevent/css/bootstrap.min.css') }}"/>
+{% endblock %}
+
+
+{% block navbar %}
+    {{  include("::navbar.html.twig") }}
+{% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('bundles/flashevent/js/jquery-1.11.2.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/flashevent/js/bootstrap.min.js') }}"></script>
+        {% endblock %}
+<br/><br/>
+
+<center class="donnees">
+    <span>
+    <h3>Données actuelles</h3>
+        </span>
+    <br/>
 <div class="fos_user_user_show">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <p>- {{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>- {{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <br/>
+    <center>
+        <a href="{{ path('fos_user_profile_edit') }}">Modifier</a>
+    </center>
 </div>
+</center>

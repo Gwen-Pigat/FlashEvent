@@ -1,3 +1,5 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
 {% extends '::base.html.twig' %}
 
 {% block body %}
@@ -5,9 +7,6 @@
     <br/><br/>
 
     <h1>Liste des événements</h1>
-
-<div class="container">
-
 
 
     <table class="table">
@@ -23,9 +22,10 @@
             </tr>
         </center>
         </thead>
-</div>
         <tbody>
         {% for entity in entities %}
+
+            <div class="container">
             <tr>
                 <td class="active"><a href="{{ path('evenement_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td class="active">{{ entity.nom }}</td>
@@ -43,6 +43,7 @@
                 </ul>
                 </td>
             </tr>
+            </div>
         {% endfor %}
         </tbody>
     </table>

@@ -1,8 +1,13 @@
+html{
+    word-break: break-all;
+}
+
+
 body{
     background-image: url("../images/background.jpg");
     height: auto;
-    max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
+    background-size: 100% 100%
 }
 
 @font-face{
@@ -92,4 +97,8 @@ center a:hover{
     border: 3px #28C223 solid;
     color: #28C223;
     text-shadow: 0 0 1px #28C223;
+}
+
+.flash-success{
+    display:none
 }
